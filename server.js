@@ -28,7 +28,6 @@ function start(route, handle) {
 
     request.addListener('data', function(postDataChunk) {
       postData += postDataChunk;
-      console.log('received POST data chunk' + postDataChunk+'.');
     });
 
     request.addListener('end', function() {
