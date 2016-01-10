@@ -1,3 +1,4 @@
+/*
 var exec = require('child_process').exec;
 function start(response){
   console.log('Request handler "start" was called.');
@@ -13,5 +14,16 @@ function upload(response){
   response.write('Hello Upload');
   response.end();
 }
+exports.start = start;
+exports.upload = upload;
+*/
+function start() {
+  console.log('Request handler "start" was called');
+}
+
+function upload() {
+  console.log('Request handler "upload" was called');
+}
+
 exports.start = start;
 exports.upload = upload;
